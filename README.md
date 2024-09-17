@@ -62,20 +62,13 @@ https://storage.googleapis.com/qiaseq-dna/example/DHS-101Z.primers.txt \
 https://storage.googleapis.com/qiaseq-dna/example/DHS-101Z.roi.bed ./
 
 ### Run a container from the image above interactively, mounting the data directory and your run directory, the output files will also be created in this directory.
-sudo docker run -it -v /home/your_data_dir/data:/srv/qgen/data/ -v /home/your_fav_dir/:/srv/qgen/example/ qiaseq/qiaseq-dna
 
-### Change directory and get the latest code from github
-cd /srv/qgen/code/
-git clone --recursive https://github.com/qiaseq/qiaseq-dna.git
-
-### Change to run directory and copy over parameters file
-cd /srv/qgen/example
-cp /srv/qgen/code/qiaseq-dna/run_sm_counter_v2.params.txt ./
 
 ### Edit the bottom of run_consensus.params.txt if you need to change the read set and primer file
 
 ### Run the pipeline
-python /srv/qgen/code/qiaseq-dna/run_qiaseq_dna.py run_sm_counter_v2.params.txt v2 single NEB_S2 > run.log 2>&1 &  
+cd /srv/qgen/example
+python /srv/qgen/code/run_qiaseq_dna.py ../code/run_sm_counter_v2.params.txt v2 single NEB_S2
 ```
 
 **The parameters are explained below :**
