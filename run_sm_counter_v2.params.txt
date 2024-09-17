@@ -70,11 +70,11 @@ srBed = /srv/qgen/data/annotation/SR_LC_SL.full.bed
 
 # readSet
 [NEB_S2]
-readFile1 = /srv/qgen/example/NEB_S2_L001_R1_001.fastq.gz
-readFile2 = /srv/qgen/example/NEB_S2_L001_R2_001.fastq.gz
+readFile1 = /srv/qgen/example/FFPE/FFPE_1/20053-FFPE_S1_L001_R1_001.fastq.gz
+readFile2 = /srv/qgen/example/FFPE/FFPE_1/20053-FFPE_S1_L001_R2_001.fastq.gz
 instrument = MiSeq
-primerFile = /srv/qgen/example/DHS-101Z.primers.txt
-roiBedFile = /srv/qgen/example/DHS-101Z.roi.bed
+primerFile = /srv/qgen/example/Manifest/DHS-002Z_panel_primers.3_prime_only.tsv
+roiBedFile = /srv/qgen/example/Manifest/DHS-002Z.roi.bed
 platform = Illumina
 runCNV = False
 sampleType =  Single
