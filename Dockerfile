@@ -106,3 +106,5 @@ RUN cd /srv/qgen/bin/downloads && git clone --recursive https://github.com/vcfli
 ENV PYTHONPATH $PYTHONPATH:/opt/conda/lib/python2.7/site-packages/:/srv/qgen/code/qiaseq-dna/
 ENV LD_LIBRARY_PATH $LD_LIBRARY_PATH:/srv/qgen/bin/ssw/src/
 
+#WORKDIR /srv/qgen/code/
+#RUN cd /srv/qgen/code/; git clone --recursive https://github.com/fraferrero/qiaseq-dna.git
